@@ -1,0 +1,23 @@
+h1.Welcome{
+    text-align: center;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 45px;
+    color: white;
+    background-color: royalblue;
+    margin: 0px 0px 20px 0px;
+    padding: 15px;
+
+    animation-name: WelcomeAnimation;
+    animation-duration: 1s;
+}
+
+@keyframes WelcomeAnimation{
+    from{
+        font-size: 10px;
+        color: rgba(0, 0, 0, 0);
+    }
+    to{
+        font-size: 45px;
+        color: white;
+    }
+}

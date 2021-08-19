@@ -1,0 +1,105 @@
+/* Galery-Display */
+.GaleryDisplay{
+    display: block; 
+    margin-left: auto; 
+    margin-right: auto;
+}
+/* Galery-Display */
+
+/* carousel */
+.carousel{
+    overflow: hidden;
+    max-width: 600px;
+    position: relative;
+}
+
+.carousel .carousel__item,
+.carousel .carousel__item--hidden{
+    display: none;
+}
+
+.carousel .carousel__item img{
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+}
+
+.carousel .carousel__item--visible{
+    display: block;
+    animation: ImageFade_Max 0.5s;
+}
+
+.carousel .carousel__actions {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.carousel .carousel__actions button{
+    border-radius: 50px;
+    border: 0;
+    font-weight: bold;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+}
+
+.carousel .carousel__actions button#carousel__button--prev{
+    margin-left: 20px;
+}
+
+.carousel .carousel__actions button#carousel__button--next{
+    margin-right: 20px;
+}
+/* carousel */
+
+@keyframes ImageFade_Max{
+    from{
+        opacity: 0.1;
+    }
+
+    to{
+        opacity: 1;
+        transform: opacity linear;
+    }
+}
+
+@keyframes ImageFade_Medium{
+    from{
+        opacity: 0.1;
+    }
+
+    to{
+        opacity: 0.3;
+    }
+}
+
+@keyframes ImageFade_Min{
+    from{
+        opacity: 0;
+    }
+
+    to{
+        opacity: 0.1;
+    }
+}
+
+#Arrows{
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#Arrow-right{
+    width: 5%;
+    float: right;
+}
+
+#Arrow-left{
+    width: 5%;
+    float: left;
+}
